@@ -32,10 +32,6 @@ li{
     margin-left: 20px;
 }
 
-/* ul{
-    margin: 0;
-} */
-
 .site-name{
     font-family: 'Hahmlet', serif;
     font-size: 25px;
@@ -57,6 +53,13 @@ li{
 .nav-menu:hover{
     color: grey;
     transition: 1.0s
+}
+
+/* canvas 태그 */
+#canv{
+    position: absolute;
+    width: 1230px;
+    z-index: -1;
 }
 
 /* dashboard */
@@ -100,23 +103,6 @@ li{
         opacity: 0;
     }
 }
-
-/* .img-text{
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 20px;
-    font-weight: 100;
-    margin-left: 200px;
-    position: absolute;
-    text-align: center;
-    z-index: 1;
-} */
-
-/* .korea-comment{
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 35px;
-    position: absolute;
-    z-index: 1;
-} */
 
 .english-comment{
     font-family: 'Noto sans KR', sans-serif;
@@ -206,7 +192,7 @@ li{
 }
 
 .contact{
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 700;
     color: #FDFBFA;
     padding-top: 30px;
@@ -214,26 +200,27 @@ li{
     border-bottom: 2px solid white;
 }
 
-.links{
-    margin-top: 15px;
-    margin-bottom: 10px;
-}
-
-.links>a{
-    font-size: 30px;
-    font-weight: 400;
-    color: #FDFBFA;
-
-}
-
-.links>a:hover{
+.contact:hover{
     color: yellow;
     transition: 0.5s;
 }
 
+.contactlist{
+    display: flex;
+    flex-direction: row;
+}
+
+.links{
+    margin: 20px 40px;
+}
+
+.links-menu>img{
+    width:100px;
+}
+
 .footer>p{
     font-weight: 100;
-    font-size: 15px;
+    font-size: 20px;
     font-style: italic;
     margin: 0;
     margin-top: 10px;
@@ -264,3 +251,6 @@ a#top_btn{
     font-size: 30px
 }
 
+.top_image{
+    width: 55px
+}
