@@ -61,3 +61,56 @@ $(function() {
     });
 });
 
+// // aboutme fade-in1
+// $(function() {
+//     $(window).scroll(function() {
+//         if ($(this).scrollTop() > 250) {
+//             $('#fade-in1').fadeIn();
+//         } else {
+//             $('#fade-in1').fadeOut();
+//         }
+//     });
+    
+//     $("#fade-in1").click(function() {
+//         $('html, body').animate({
+//             scrollTop : 0
+//         }, 400);
+//         return false;
+//     });
+// });
+
+// // aboutme2 fade-in2
+// $(function() {
+//     $(window).scroll(function() {
+//         if ($(this).scrollTop() > 1000) {
+//             $('#fade-in2').fadeIn();
+//         } else {
+//             $('#fade-in2').fadeOut();
+//         }
+//     });
+    
+//     $("#fade-in2").click(function() {
+//         $('html, body').animate({
+//             scrollTop : 0
+//         }, 400);
+//         return false;
+//     });
+// });
+
+// // Projects fade-in3
+// $(function() {
+//     $(window).scroll(function() {
+//         if ($(this).scrollTop() > 1300) {
+//             $('#fade-in3').fadeIn();
+//         } else {
+//             $('#fade-in3').fadeOut();
+//         }
+//     });
+    
+//     $("#fade-in3").click(function() {
+//         $('html, body').animate({
+//             scrollTop : 0
+//         }, 400);
+//         return false;
+//     });
+// });

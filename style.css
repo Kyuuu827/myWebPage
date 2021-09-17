@@ -15,7 +15,7 @@ a{
     color: white;
     display: flex;
     flex-direction: column;
-    margin: 30px 100px
+    margin: 30px 100px;
 }
 
 /* navigator */
@@ -230,6 +230,7 @@ li{
 
 .links-menu>img{
     width:100px;
+    cursor: pointer;
 }
 
 .links-menu>img:hover {
@@ -286,4 +287,70 @@ a#top_btn{
 
 .top_image{
     width: 55px
+}
+
+@media screen and (max-width: 870px) {
+    .frame{
+        margin: 10px;
+    }
+
+    .navigator{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .site-name{
+        text-align: center;
+        font-size: 40px;
+    }
+    
+    ul{
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        background-color: #263343;
+    }
+    li{
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 15px;
+    }
+
+    .dashboard{
+        display: none;
+    }
+
+    canvas{
+        display: none;
+    }
+
+    .profile-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #profile-picture{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .myskill{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .project-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .project-list{
+        width: 100%;
+    }
+
 }
