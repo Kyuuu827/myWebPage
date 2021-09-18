@@ -4,6 +4,7 @@ html{
 
 body{
     background-color: black;
+    overflow-x: hidden;
 }
 
 a{
@@ -15,7 +16,7 @@ a{
     color: white;
     display: flex;
     flex-direction: column;
-    margin: 30px 100px;
+    margin: 30px 60px;
 }
 
 /* navigator */
@@ -66,12 +67,13 @@ li{
     75% { color: #202082; }
     90% { color: #6b2aff; } 
     100% { color: #e82aff; }
-   }
+}
 
 /* canvas 태그 */
 #matrix{
     position: absolute;
-    width: 1230px;
+    width: 90%;
+    height: 100%;
     z-index: -1;
 }
 
@@ -81,10 +83,11 @@ li{
     flex-direction: column;
     margin-top: 100px; 
     margin-bottom: 300px;
+    width: 90%;
 }
 
 .img-box{
-    width: 1200px;
+    width: 115%;
     height: 300px;
     overflow: hidden;
     margin: 0 auto;
@@ -156,9 +159,6 @@ li{
 }
 
 /* projects */
-#fade-in3{
-    margin-top: 200px;
-}
 
 #projects{
     font-size: 50px;
@@ -167,6 +167,7 @@ li{
     display: inline;
     align-self: flex-start;
     margin-top: 200px;
+    margin-bottom: 50px;
 }
 
 .project-exp{
@@ -314,6 +315,7 @@ a#top_btn{
         padding: 0;
         background-color: #263343;
     }
+
     li{
         display: block;
         width: 100%;
@@ -336,20 +338,43 @@ a#top_btn{
     }
 
     #profile-picture{
-        width: 100%;
+        width: 80%;
+        margin-left: 50px;
         margin-bottom: 20px;
+    }
+
+    #aboutme{
+        margin-left: 50px;
     }
 
     .myskill{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin-left: 50px;
+    }
+
+    .value{
+        width: 80%;
+    }
+
+    #projects{
+        width: 80%;
+        margin-left: 50px;
+        margin-bottom: 50px;
+    }
+
+    .project-exp{
+        width: 80%;
+        margin-left: 50px;
     }
 
     .project-box{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        width: 80%;
+        margin-left: 50px;
     }
 
     .project-list{
