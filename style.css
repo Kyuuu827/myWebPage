@@ -1,5 +1,6 @@
 html{
     scroll-behavior: smooth;
+    scroll-snap-type: y proximity;
 }
 
 body{
@@ -17,6 +18,7 @@ a{
     display: flex;
     flex-direction: column;
     margin: 30px 60px;
+    
 }
 
 /* navigator */
@@ -25,6 +27,7 @@ a{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    scroll-snap-align: start;
 }
 
 li{
@@ -34,9 +37,10 @@ li{
 }
 
 .site-name{
-    font-family: 'Hahmlet', serif;
+    font-family: 'Montserrat', serif;
     font-size: 25px;
     color: white;
+    cursor: pointer;
 }
 
 .site-name:hover{
@@ -49,6 +53,7 @@ li{
     color: white;
     font-size: 25px;
     font-weight: 400;
+    font-family: 'Montserrat', serif;
     text-decoration: none;
 }
 
@@ -120,18 +125,6 @@ li{
     }
 }
 
-.english-comment{
-    font-family: 'Noto sans KR', sans-serif;
-    font-weight: 100;
-    font-size: 15px;
-    font-style: italic;
-    letter-spacing: -0.5px;
-    position: absolute;
-    margin-left: 700px;
-    text-align: center;
-    z-index: 1;
-}
-
 /* About me */
 .profile-section{
     display: flex;
@@ -143,23 +136,40 @@ li{
 #profile-picture{
     width: 500px;
     margin-right: 100px;
+    scroll-snap-align: start;
 }
 
 #aboutme{
     font-size: 50px;
     margin-top: 0;
+    margin-bottom: 70px;
+    cursor: pointer;
+}
+
+#aboutme:hover{
+    animation-duration: 1s; 
+    animation-name: rainbowLink; 
+    animation-iteration-count: infinite;
+}
+
+.myskill>h2{
     text-decoration: underline;
 }
+
+.myskill>h2:hover{
+    color: orangered;
+    transition: 0.5s;
+    cursor: pointer;
+}    
 
 .value{
     align-self: center;
     margin-top: 50px;
-    font-size: 30px;
+    font-size: 25px;
     font-style: italic;
 }
 
 /* projects */
-
 #projects{
     font-size: 50px;
     font-weight: 700;
@@ -168,6 +178,13 @@ li{
     align-self: flex-start;
     margin-top: 200px;
     margin-bottom: 50px;
+    scroll-snap-align: start;
+}
+
+#projects:hover{
+    animation-duration: 1s; 
+    animation-name: rainbowLink; 
+    animation-iteration-count: infinite;
 }
 
 .project-exp{
@@ -195,7 +212,6 @@ li{
     font-size: 30px;
 }
 
-
 /* footer */
 .footer{
     display: flex;
@@ -212,6 +228,7 @@ li{
     padding-top: 30px;
     margin-bottom: 30px;
     border-bottom: 2px solid white;
+    scroll-snap-align: start;
 }
 
 .contact:hover{
@@ -339,19 +356,19 @@ a#top_btn{
 
     #profile-picture{
         width: 80%;
-        margin-left: 50px;
+        margin-left: 45px;
         margin-bottom: 20px;
     }
 
     #aboutme{
-        margin-left: 50px;
+        margin-left: 45px;
     }
 
     .myskill{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-left: 50px;
+        margin-left: 45px;
     }
 
     .value{
@@ -360,13 +377,13 @@ a#top_btn{
 
     #projects{
         width: 80%;
-        margin-left: 50px;
+        margin-left: 45px;
         margin-bottom: 50px;
     }
 
     .project-exp{
         width: 80%;
-        margin-left: 50px;
+        margin-left: 45px;
     }
 
     .project-box{
@@ -374,7 +391,7 @@ a#top_btn{
         flex-direction: column;
         justify-content: center;
         width: 80%;
-        margin-left: 50px;
+        margin-left: 45px;
     }
 
     .project-list{
